@@ -17,40 +17,31 @@
          nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) 
          [
           "arc-browser"
-          # "docker"
           "google-chrome"
           "cursor"
           "postman"
           "discord"
           "teams"
-          # "lmstudio"
           "vscode"
           "raycast"
           "soundsource"
-          # "Xcode.app"
           "bartender"
          ];
         # System packages via Nix
         environment.systemPackages = [
           pkgs.arc-browser
           pkgs.docker
-          # pkgs.ghostty
           pkgs.unnaturalscrollwheels
           pkgs.sqlitebrowser
           pkgs.google-chrome
           pkgs.code-cursor
           pkgs.postman
           pkgs.discord
-          # pkgs.teams
-          # pkgs.lmstudio
-          # pkgs.obs-studio
           pkgs.ollama
           pkgs.jetbrains.pycharm-community-bin
           pkgs.pgadmin4
           pkgs.telegram-desktop
           pkgs.vscode
-          # pkgs.vlc
-          # pkgs.handbrake
           pkgs.python313
           pkgs.postgresql_15
           pkgs.raycast
@@ -69,6 +60,14 @@
           casks = [
             "keepingyouawake"
             "lm-studio"
+            "handbrake"
+            "vlc"
+            "obs"
+            "docker"
+            "microsoft-teams"
+            "ghostty"
+            "cleanshot"
+            "windscribe"
           ];
           # Optional:
           # onActivation.cleanup = "uninstall"; # cleans up unlisted brews/casks
