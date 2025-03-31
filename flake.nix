@@ -39,6 +39,7 @@
           pkgs.soundsource
           pkgs.darwin.xcode
           pkgs.zsh-autosuggestions
+          pkgs.zsh-completions
           pkgs.git
           pkgs.docker-compose
         ];
