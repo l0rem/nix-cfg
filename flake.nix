@@ -1,5 +1,5 @@
 {
-  description = "Example nix-darwin system flake";
+  description = "lorem's nix-darwin system flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -10,8 +10,6 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs }:
   let
     configuration = { pkgs, ... }: {
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
       #TODO: pulltube, cleanshotX, windscribe
       environment.systemPackages =
         [
